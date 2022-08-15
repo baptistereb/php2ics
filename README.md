@@ -56,7 +56,7 @@ $cal->GetICS();
 | url              |                      | string         |url                            |
 
 NB: if parameter is not required, then you can replace it with this argument : NULL. Example :
-```
+```php
 $cal->AddEvent("title", NULL, 1660568400, 1660572000, NULL, NULL);
 ```
 
@@ -67,6 +67,6 @@ $cal->AddEvent("title", NULL, 1660568400, 1660572000, NULL, NULL);
 | fichier          |                     | string |name of downloaded file    |
 
 NB: this parameter is not required, then you can replace it with this argument : NULL. By default, the name of the file will be : "calend" (calend.ics). Example :
-```
+```php
 $cal->DownloadICS("NULL");
 ```
