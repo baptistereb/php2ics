@@ -2,7 +2,7 @@
 # php2ics
 php script to transform php into ics file
 
-## deployment
+## Deployment
 
 ###### __1. copy the "php2ics.php" file in the main folder of your project__
 You can copy the file in a different folder
@@ -12,7 +12,7 @@ include("php2ics.php");
 ```
 if you modify the folder then modify the adress in the "include".
 ###### __3. use it !__
-## how it work
+## How it work
 
 ###### __1. Create a calendar :__
 
