@@ -79,8 +79,10 @@ class php2ics
 	public function DownloadICS(?string $fichier): void
 	{
 		if(!isset($fichier)) {
-			$fichier = 'calend.ics';
+			$fichier = 'calend';
 		}
+
+		$fichier .= ".ics";
 
 		$dwn = str_replace("<br>","\n", $this::$ics);
 		$f = fopen($fichier, 'w+');
