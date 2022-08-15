@@ -80,6 +80,8 @@ class php2ics
 	{
 		if(!isset($fichier)) {
 			$fichier = 'calend';
+		} else {
+			$fichier = htmlspecialchars($fichier);
 		}
 
 		$fichier .= ".ics";
