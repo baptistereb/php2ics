@@ -68,5 +68,5 @@ $cal->AddEvent("title", NULL, 1660568400, 1660572000, NULL, NULL);
 
 NB: this parameter is not required, then you can replace it with this argument : NULL. By default, the name of the file will be : "calend" (calend.ics). Example :
 ```
-$cal->__DownloadICS("NULL");
+$cal->DownloadICS("NULL");
 ```
