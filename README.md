@@ -59,3 +59,14 @@ NB: if parameter is not required, then you can replace it with this argument : N
 ```
 $cal->AddEvent("title", NULL, 1660568400, 1660572000, NULL, NULL);
 ```
+
+#### __DownloadICS function :__
+
+| Input parameter  | required parameter  | type   | description               | 
+| :--------------- |:-------------------:|:-------|:--------------------------|
+| fichier          | x                   | string |name of downloaded         |
+
+NB: this parameter is not required, then you can replace it with this argument : NULL. By default, the name of the file will be : "calend" (calend.ics). Example :
+```
+$cal->__DownloadICS("NULL");
+```
