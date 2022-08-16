@@ -72,7 +72,7 @@ class php2ics
 	public function GetICS(): string
 	{
 		$getICS = $this::$ics;
-		return $getICS = str_replace("\n", "<br>", $getICS);
+		return $getICS;
 	}
 
 	//fonction qui permet de télécharger le fichier ICS
@@ -86,12 +86,15 @@ class php2ics
 
 		$fichier .= ".ics";
 
-		$dwn = str_replace("<br>","\n", $this::$ics);
-		$f = fopen($fichier, 'w+');
-		fputs($f, $this::$ics);
-		header('Location:'.$fichier);
+		header('Content-Type: text/ics');
+		header('Content-Transfer-Encoding: Binary');
+		header('Content-Disposition:attachment; filename='.$fichier);
+		echo $this::$ics;
 	    exit;
 	}
 }
-
+$cal = new php2ics("your_organisation", "your_product");
+$cal->AddEvent("title", "description", 5, 5, "location", "url");
+$cal->End();
+$cal->DownloadICS("my_ics");
 ?>
