@@ -93,8 +93,4 @@ class php2ics
 	    exit;
 	}
 }
-$cal = new php2ics("your_organisation", "your_product");
-$cal->AddEvent("title", "description", 5, 5, "location", "url");
-$cal->End();
-$cal->DownloadICS("my_ics");
 ?>
