@@ -34,7 +34,7 @@ $cal->End();
 
 ###### __4. Download it !__
 ```php
-$cal->DownloadICS();
+$cal->DownloadICS("my_ics");
 ```
 
 ###### __You can also get it as HTML !__
